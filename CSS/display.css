@@ -1,0 +1,47 @@
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background: lightblue;
+    display: block;
+}
+
+.box2 {
+    background: lightcoral;
+}
+
+.box3 {
+    background: lightgreen;
+}
+
+/*
+
+Display properties:
+- block: The element takes up the full width available and starts on a new line.
+- inline: The element takes up only as much width as necessary and does not start on a new line.
+- inline-block: The element takes up only as much width as necessary but can have width and height set, and does not start on a new line.
+- none: The element is not displayed at all (it is removed from the document flow).
+- flex: The element becomes a flex container, allowing for flexible layout of its children.
+- grid: The element becomes a grid container, allowing for flexible layout of its children.
+
+- BLOCK
+    Block vem como padrão para elementos como div, p, h1, etc
+
+    -Ocupa 100% da largura do elemento pai
+    -Sempre ocupa uma linha inteira
+    -Altura é determinada pelo conteúdo ou pode ser definida explicitamente
+    -Podemos definir margens, preenchimentos e bordas
+    -Podemos definir height e width
+
+- INLINE
+    Inline vem como padrão para elementos como span, a, b, i etc.
+
+    -Elementos em linha, ou seja, não iniciam uma nova linha
+    -Não permitem definir altura e largura
+    -Não podemos definir margens verticais (top e bottom) ou preenchimentos verticais
+    -Podemos definir margens horizontais (left e right) e preenchimentos horizontais
+    -Ganha comportamento de uma palavra, ou seja, se o conteúdo for maior que a largura disponível, ele quebra para a próxima linha
+
+- INLINE-BLOCK
+    -Inline-block tem o comportamento de inline, mas pode ter largura e altura definidas
+*/

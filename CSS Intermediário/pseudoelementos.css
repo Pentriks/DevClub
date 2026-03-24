@@ -1,0 +1,35 @@
+/*  
+PSEUDO ELEMENTOS
+
+    ::before
+    ::after
+    ::placeholder
+    
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    margin: 20px;
+    position: relative;
+}
+
+p::before {
+    content: ">";
+    position: absolute;
+    left: -20px;
+    color: #FF9B13;
+}
+
+p::after {
+    content: "<";
+    position: absolute;
+    right: -20px;
+    color: #FF9B13;
+}

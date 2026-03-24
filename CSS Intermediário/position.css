@@ -1,0 +1,31 @@
+/*
+    position: static (default) - The element is positioned according to the normal flow of the document. It is not affected by top, bottom, left, or right properties.
+
+    position: relative - The element is positioned relative to its normal position. It is affected by top, bottom, left, and right properties.
+
+    position: absolute - The element is positioned relative to the closest positioned ancestor. It is affected by top, bottom, left, and right properties. If there is no positioned ancestor, it uses the document body, and moves along with page scrolling.
+
+    position: fixed - The element is positioned relative to the viewport. It is affected by top, bottom, left, and right properties.;
+
+    position: sticky; - The element is positioned based on the user's scroll position. It toggles between relative and fixed, depending on the scroll position. It is affected by top, bottom, left, and right properties.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 200vh;
+    width: 100vw;
+}
+
+.div-dad {
+    height: 350px;
+    width: 350px;
+    background-color: #FF1396;
+}
+
+.div-son {
+    height: 150px;
+    width: 150px;
+    background-color: #FF9B13;
+}

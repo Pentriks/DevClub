@@ -1,0 +1,47 @@
+/*
+
+    RESPONSIVIDADE
+
+    - A responsividade é a capacidade de um site ou aplicação web se adaptar a diferentes tamanhos de tela e dispositivos, proporcionando uma experiência de usuário consistente e otimizada.
+    - O design responsivo é uma abordagem de desenvolvimento web que utiliza técnicas como media queries, flexbox, grid e unidades relativas para criar layouts flexíveis e adaptáveis.
+
+    MEDIA QUERIES
+
+    - São regras condicionais que permitem aplicar estilos CSS específicos com base em características do dispositivo, como largura da tela, orientação, resolução, etc.
+    - Sintaxe: @media (condição) { /* estilos CSS *\/ }
+    - Exemplo: @media screen and (max-width: 600px) { /* estilos para telas menores que 600px *\/ }
+    
+    ORIENTAÇÃO
+
+    - A propriedade 'orientation' pode ser usada para aplicar estilos com base na orientação do dispositivo (retrato ou paisagem).
+    - Exemplo: @media screen and (orientation: portrait) { /* estilos para orientação retrato *\/ }
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    font-size: 3rem;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    div {
+        background-color: #c0c0c0;
+        
+    }
+}

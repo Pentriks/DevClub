@@ -1,0 +1,40 @@
+/*
+
+PSEUDO CLASSES
+
+    :active - when the element is being activated (e.g., clicked on)
+    :visited - when the element has been visited (e.g., a link that has been clicked on)
+    :hover - when the mouse is hovering over the element
+    :checked - when the element is checked (e.g., a checkbox or radio button)
+    :disabled - when the element is disabled (e.g., a form input that cannot be interacted with)
+    :enabled - when the element is enabled (e.g., a form input that can be interacted with)
+    :focus - when the element is focused (e.g., a form input that is currently selected)
+    :read-only - when the element is read-only (e.g., a form input that cannot be edited)
+    :empty - when the element has no children (e.g., an empty div)
+
+    :first-child - when the element is the first child of its parent
+    :last-child - when the element is the last child of its parent
+    :first-of-type - when the element is the first of its type among its siblings
+    :last-of-type - when the element is the last of its type among its siblings
+    :not() - when the element does not match a certain selector (e.g., :not(.active) selects all elements that do not have the class "active")
+    :nth-child(n) - when the element is the nth child of its parent (e.g., :nth-child(2) selects the second child of its parent)
+    :nth-last-child(n) - when the element is the nth last child of its parent (e.g., :nth-last-child(2) selects the second last child of its parent)
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+button:hover {
+    background-color: lightblue;
+}

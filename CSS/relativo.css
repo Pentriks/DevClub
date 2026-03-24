@@ -1,0 +1,26 @@
+.vo {
+
+}
+
+.pai {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.filho {
+    
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+}
+
+/* 
+    As unidades de medida relativas são aquelas que se baseiam em um elemento pai ou no tamanho da tela. Elas são úteis para criar layouts responsivos, pois se adaptam ao tamanho do dispositivo. As unidades de medida relativas mais comuns são:
+- % (porcentagem): representa uma porcentagem do elemento pai. Por exemplo, se um elemento tem uma largura de 50%, ele ocupará metade da largura do elemento pai.
+- vw (viewport width): representa uma porcentagem da largura da janela de visualização. Por exemplo, 50vw significa 50% da largura da janela.
+- vh (viewport height): representa uma porcentagem da altura da janela de visualização. Por exemplo, 50vh significa 50% da altura da janela.
+- em: representa o tamanho da fonte do elemento pai. Por exemplo, 2em significa duas vezes o tamanho da fonte do elemento pai.
+- rem: representa o tamanho da fonte do elemento raiz (geralmente o elemento <html>). Por exemplo, 2rem significa duas vezes o tamanho da fonte do elemento raiz.
+
+*/

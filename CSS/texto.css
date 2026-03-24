@@ -1,0 +1,22 @@
+h1 {
+    color: blue; /* troca a cor do texto */
+    font-size: 24px; /* troca o tamanho da fonte */
+    font-weight: bolder; /* troca o peso da fonte */
+    font-family: "Roboto", sans-serif; /* troca a família da fonte */
+    text-align: center; /* alinha o texto ao centro */
+    font-style: italic; /* troca o estilo da fonte */
+    text-shadow: 10px 10px 10px red; /* adiciona sombra ao texto */
+}
+
+p {
+    color: black; /* troca a cor do texto */
+    font-size: 30px; /* troca o tamanho da fonte */
+    font-weight: 100; /* troca o peso da fonte */
+    font-family: "Roboto", sans-serif; /* troca a família da fonte */
+    text-align: justify; /* alinha o texto à justificação */
+    line-height: 30px; /* troca o espaçamento entre linhas */
+    letter-spacing: 10px; /* troca o espaçamento entre letras */
+    word-spacing: 40px; /* troca o espaçamento entre palavras */
+    text-transform: uppercase; /* troca o transformação do texto */
+    text-decoration: underline; /* troca a decoração do texto */
+}

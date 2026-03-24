@@ -1,0 +1,158 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+}
+
+header {
+    margin-left: 42px;
+    margin-top: 47px;
+}
+
+.menu {
+    margin-right: 32px;
+    color: #17233D;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.88px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    width: 124px;
+    height: 51px;
+    background: #6FBF44;
+    color: #FFFFFF;
+    border: 1px solid #4CB538;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3BB143;
+}
+
+img {
+    display: inline-block;
+    margin-top: 163px;
+    margin-left: 123px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    order: 1;
+    width: 30vw;
+}
+
+div {
+    display: inline-block;
+    margin-left: 85px;
+    width: 493px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 82px;
+    letter-spacing: 0.6px;
+    color: #161A49;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    color: #4B505A;
+    margin-top: 47px;
+    margin-bottom: 55px;
+}
+
+.link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 1px;
+    color: #6FBF44;
+    cursor: pointer;
+}
+
+main {
+    display: inline-block;
+    flex-direction: column;;
+}
+
+.bottom {
+    order: 2;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    div {
+        position: relative;
+        display: block;
+        height: 60%;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 60px;
+        margin: 0px;
+        text-align: center;
+        flex-direction: column-reverse;
+        order: 1; /* coloca a div inferior no topo (agora é a primeira) */
+    }
+
+    img {
+        position: static;
+        display: block;
+        height: 40%;
+        width: 100%;
+        margin: 0px 0px 40px 0px;
+        padding: 40px 50px 0px 20px;
+        order: 2; /* desloca a div superior para baixo no celular */
+    }
+
+    .menu {
+        display: none;
+    }
+
+    button {
+        position: relative;
+        margin: 0px 0px 31px 180px;
+    }
+
+    h1 {
+        width: auto;
+        height: 60px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.6px;
+        color: #161A49;
+    }
+
+    p {
+        width: auto;
+        height: 100px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: #4B505A;
+    }
+
+}

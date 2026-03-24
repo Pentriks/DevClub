@@ -1,0 +1,28 @@
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: lightblue;
+    margin: 20px;
+    padding: 20px;
+}
+
+.box-2 {
+    width: 300px;
+    height: 300px;
+    background-color: lightcoral;
+    margin: 20px;
+    padding: 20px 50px;
+        /* top and bottom left and right */
+}
+
+.box-3 {
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 20px 50px 20px 50px;
+        /*   12h  15h  18h  21h  */
+}

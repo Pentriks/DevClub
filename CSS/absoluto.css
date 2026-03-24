@@ -1,0 +1,15 @@
+h1 {
+    font-size: 15px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* 
+    O valor "absoluto" é usado para definir um tamanho fixo para o elemento, independentemente do contexto em que ele esteja inserido. Isso significa que o elemento terá sempre o mesmo tamanho, independentemente do tamanho da tela ou do dispositivo em que ele esteja sendo visualizado.
+    Exemplos:
+    px: Pixels
+    cm: Centímetros
+    mm: Milimetros
+*/
