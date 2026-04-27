@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: #000080;
+
+}
+
+.container {
+    display: block;
+    background-color: aliceblue;
+    margin: 40px auto;
+    width: 370px;
+    height: 100%;
+    padding: 40px 20px;
+    border-radius: 20px;
+}
+
+.weight-div-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    color: white;
+    background-color: #000080;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+button:active {
+    transform: translateY(2px);
+    opacity: .6;
+}
+
+select, option {
+    padding-left: 10px;
+    appearance: none;
+    font-weight: 500;
+    line-height: 30px;
+    border-radius: 6px;
+    border: 1px solid #777777;
+    cursor: pointer;
+}
+
+input {
+    padding-left: 10px;
+    line-height: 30px;
+    outline: none;
+    border: 1px solid #777777;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+section {
+    border:1px solid #000080;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 20px 0px;
+    gap: 15px;
+}
+
+.weight-name, .weight-name-converted {
+    color: #777777;
+    font-size: 15px;
+    line-height: 14px;
+    font-weight: 400;
+}
+
+.weight-value, .value-to-convert {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+}
+
+.weight-img , .weight-img-converted  {
+    height: 60px;
+}
+
+.img-section {
+    height: 120px;
+}
