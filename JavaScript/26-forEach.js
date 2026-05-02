@@ -6,5 +6,5 @@ let users = [
 ]
 
 users.forEach((item) => {
-    console.log(`Nome: ${item.name}, Idade: ${item.age}, Contato: ${item.contact}`)   
+    console.log(`Nome: ${item.name}, Idade: ${item.age}, Contato: ${item.contact}`)
 });
