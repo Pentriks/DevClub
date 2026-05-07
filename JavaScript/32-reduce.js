@@ -4,7 +4,7 @@ const sum = list.reduce((acumulador, valorAtual) => {
     const acc = acumulador + valorAtual
     console.log(`acc: ${acumulador}    Valor Atual: ${valorAtual} `)
     return acc
-})
+}, 0)
 
 console.log(sum)
 
