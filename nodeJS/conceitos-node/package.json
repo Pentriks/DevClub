@@ -1,0 +1,22 @@
+{
+  "name": "conceitos-node",
+  "version": "1.0.0",
+  "description": "Esse projeto é um conceito básico para entender melhor o NODE",
+  "keywords": [
+    "Yaminote"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "DevClub"
+  },
+  "license": "ISC",
+  "author": "Luigy e Endrik",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
