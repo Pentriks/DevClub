@@ -1,4 +1,5 @@
 import express from 'express'
+import { PrismaClient } from "./generated/prisma/client.js"
 
 const app = express()
 app.use(express.json())
@@ -8,6 +9,8 @@ app.listen(3002, () => {
 })
 
 const users = []
+
+const prisma = new PrismaClient()
 
 app.get('/usuarios', (req, res) => {
     res.status(200).json(users)
