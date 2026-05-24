@@ -10,13 +10,7 @@ const currencyImage = document.querySelector(".currency-img")
 
 
 // valores das moedas em relação ao REAL
-const currencies = {
-    BRL: 1,
-    USD: 5,
-    EUR: 5.8,
-    GBP: 6.7,
-    BTC: 312000
-}
+
 
 // formatação
 const formats = {
@@ -45,7 +39,23 @@ const images = {
 }
 
 // função principal
-function convertValues(){
+async function convertValues(){
+
+    const data = await fetch ('https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL,GBP-BRL').then ((response) => {
+        return response.json()
+    })
+
+    console.log(data)
+
+    const currencies = {
+    BRL: 1,
+    USD: data.USDBRL.high,
+    EUR: data.EURBRL.high,
+    GBP: data.GBPBRL.high,
+    BTC: data.BTCBRL.high
+}
+
+
     const inputCurrencyValue = Number(document.querySelector(".input-currency").value)
 
     const from = currencySelectOf.value
