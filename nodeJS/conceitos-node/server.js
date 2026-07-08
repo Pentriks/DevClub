@@ -1,9 +1,11 @@
 import express from 'express'
 import { PrismaClient } from "./generated/prisma/client.js"
+import cors from 'cors'
 
 const app = express()
 
 app.use(express.json())
+app.use(cors())
 
 app.listen(3003, () => {
     console.log("Servidor funcionando")
@@ -27,7 +29,7 @@ app.post('/usuarios', async (req, res) => {
 
         console.log(user)
 
-        return res.status(202).json({ message: "Cadastro realizado com muito sucesso!" })
+        return res.status(202).json(user)
 
     } catch (err) {
         res.status(400).json({error : err.message})
