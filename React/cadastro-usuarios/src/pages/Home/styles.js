@@ -61,7 +61,7 @@ export const Button = styled.button`
     width: fit-content;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* Transição suave para todas as alterações (cor e tamanho) */
-    transition: background-color 0.3s ease, transform 0.3s ease-in;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in;
     position: relative;
 
     &::after {
@@ -112,7 +112,7 @@ export const Button = styled.button`
     }
 
     &:active {
-        opacity: .6;
+        opacity: .8;
         transition: opacity 0.2s ease-in-out;
     }
     
