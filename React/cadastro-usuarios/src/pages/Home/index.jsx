@@ -1,7 +1,8 @@
-import { Title, Container, TopBackground, Form, ContainerInputs, Input, Button, InputLabel } from './styles'
+import { Title, Container, Form, ContainerInputs, Input, InputLabel } from './styles'
 import { useRef } from 'react'
-import UsersImage from '../../assets/users.png'
 import api from '../../services/api'
+import Button from '../../components/Button'
+import MainBackground from '../../components/TopBackground'
 
 
 function Home() {
@@ -24,11 +25,8 @@ function Home() {
 
    <Container>
 
-        <TopBackground>
-          <img src={UsersImage} alt="imagem-usuarios" style={{width:"100%", height:"100%", paddingLeft: 170, paddingRight: 170}}/>
-        </TopBackground>
-
-
+        <MainBackground>
+        </MainBackground>
 
       <Form> 
 
@@ -57,9 +55,6 @@ function Home() {
         <Button type='button' onClick={registerNewUser}>Cadastrar Usúario</Button>
 
       </Form>
-      
-        
-
 
    </Container>
 
