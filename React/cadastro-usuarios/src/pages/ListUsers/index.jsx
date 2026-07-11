@@ -5,9 +5,13 @@ import MainBackground from '../../components/TopBackground'
 import Title from '../../components/Tittle'
 import { Container, ContainerUser, CardUsers, TrashIcon, AvatarUser } from './styles'
 import Trash from '../../assets/trash.svg'
+import { useNavigate } from 'react-router-dom'
 
 function ListUsers(){
+    const navigate = useNavigate()
     const [users, setUsers] = useState([])
+
+
 
     useEffect(() => { 
         
@@ -47,7 +51,7 @@ function ListUsers(){
 
             </ContainerUser>
             
-            <Button type="button">Voltar</Button>
+            <Button type="button" onClick={() => navigate('/')}>Voltar</Button>
 
         </Container>
 
