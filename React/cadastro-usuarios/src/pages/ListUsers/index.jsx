@@ -1,15 +1,20 @@
 import api from '../../services/api'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Button from '../../components/Button'
 import MainBackground from '../../components/TopBackground'
+import Title from '../../components/Tittle'
+import { Container, ContainerUser, CardUsers, TrashIcon, AvatarUser } from './styles'
+import Trash from '../../assets/trash.svg'
 
 function ListUsers(){
+    const [users, setUsers] = useState([])
 
     useEffect(() => { 
         
         async function getUsers(){
-            const usersFromApi = await api.get('/usuarios')
-            console.log(usersFromApi)
+            const { data } = await api.get('/usuarios')
+            
+            setUsers(data)
         }
 
         getUsers()
@@ -18,11 +23,33 @@ function ListUsers(){
 
     return(
 
-        <div>
-            <h1>Listagem de Usuários</h1>
+        <Container>
+        
             <MainBackground></MainBackground>
-            <Button>Voltar</Button>
-        </div>
+
+               <Title>Listagem de Usuários</Title>
+
+            <ContainerUser>
+
+                {users.map((user) => (
+                    <CardUsers key={user.id}>
+                        <AvatarUser src={`https://api.dicebear.com/9.x/bottts-neutral/svg?seed=${user.name}`}/>
+                    <div>
+                        <h3>{user.name}</h3>
+                        <p>{user.age}</p>
+                        <p>{user.email}</p>
+                    </div>
+                
+                        <TrashIcon src={Trash} alt='lixo-icone'></TrashIcon>
+                
+                    </CardUsers>
+                ))}
+
+            </ContainerUser>
+            
+            <Button type="button">Voltar</Button>
+
+        </Container>
 
     )
 }

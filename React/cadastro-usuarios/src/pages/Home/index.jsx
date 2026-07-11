@@ -1,9 +1,10 @@
-import { Title, Container, Form, ContainerInputs, Input, InputLabel } from './styles'
+import { Container, Form, ContainerInputs, Input, InputLabel } from './styles'
 import { useRef } from 'react'
 import api from '../../services/api'
 import Button from '../../components/Button'
 import MainBackground from '../../components/TopBackground'
 import { useNavigate  } from 'react-router-dom'
+import Title from '../../components/Tittle'
 
 
 function Home() {
