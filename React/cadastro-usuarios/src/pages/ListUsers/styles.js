@@ -49,7 +49,6 @@ h3 {
 `
 
 export const TrashIcon = styled.img`
-padding-left: px;
 cursor: pointer;
 transition: transform 0.3s ease-in-out;
 

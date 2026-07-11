@@ -13,6 +13,17 @@ function ListUsers(){
 
 
 
+
+    async function deleteUsers(id) {
+        await api.delete(`/usuarios/${id}`)
+
+        const updatedUsers = users.filter((user) => user.id !== id)
+        setUsers(updatedUsers)
+    }
+
+
+
+
     useEffect(() => { 
         
         async function getUsers(){
@@ -24,6 +35,8 @@ function ListUsers(){
         getUsers()
        
     }, [])
+
+
 
     return(
 
@@ -44,7 +57,7 @@ function ListUsers(){
                         <p>{user.email}</p>
                     </div>
                 
-                        <TrashIcon src={Trash} alt='lixo-icone'></TrashIcon>
+                        <TrashIcon src={Trash} alt='lixo-icone' onClick={() => deleteUsers(user.id)}></TrashIcon>
                 
                     </CardUsers>
                 ))}
