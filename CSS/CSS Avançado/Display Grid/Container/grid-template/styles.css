@@ -15,7 +15,19 @@ body {
     background-color: rgb(0, 0, 17);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+     /* 
+    O ATALHO GRID-TEMPLATE:
+    [alturas das linhas] / [larguras das colunas]
+  */
+  grid-template: 
+    100px 100px 100px / 1fr 1fr 1fr; 
+  
+  /* 
+    EXPLICAÇÃO DO VALOR ACIMA:
+    - Antes da barra (/): Cria 3 linhas, cada uma com 100px fixos de altura.
+    - Depois da barra (/): Cria 3 colunas que dividem o espaço igualmente (1fr cada).
+    - Total: Uma grade perfeita de 3x3 que acomoda as 9 divs automaticamente.
+  */
 }
 
 .space1 {
