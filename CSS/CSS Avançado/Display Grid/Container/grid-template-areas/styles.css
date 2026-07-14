@@ -14,34 +14,29 @@ body {
     height: 100%;
     background-color: rgb(0, 0, 17);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    'header header header'
+    'section article aside'
+    'footer footer footer';
 }
 
-.space1 {
+header {
+    grid-area: header;
     background-color: rgb(255, 3, 3);
 }
-.space2 {
+aside {
+    grid-area: aside;
     background-color: rgb(132, 113, 113);
 }
-.space3 {
+section {
+    grid-area: section;
     background-color: rgb(84, 52, 52);
 }
-.space4 {
+article {
+    grid-area: article;
     background-color: green;
 }
-.space5 {
+footer {
+    grid-area: footer;
     background-color: pink;
-}
-.space6 {
-    background-color: yellow;
-}
-.space7 {
-    background-color: rgb(54, 13, 108);
-}
-.space8 {
-    background-color: rgb(255, 138, 65);
-}
-.space9 {
-    background-color: rgb(0, 0, 0);
 }
